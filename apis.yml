@@ -1,7 +1,26 @@
 aid: circanews
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/circanews.png
 name: circanews
-description: circanews is a company surfaced as a portfolio company of slow-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  circanews is a company surfaced as a portfolio company of slow-ventures and added to the API
+  Evangelist network as a stub for enrichment. Enrichment probing on 2026-07-20 found no live web
+  presence. The domain circanews.com is registered (GoDaddy Corporate Domains, created 2011-12-20)
+  and carries authoritative NS and SOA records, but publishes no A record for the apex or for www, so
+  no website, developer portal, documentation or API surface could be reached. The domain is still
+  actively used for corporate email, with Microsoft 365 MX, an SPF record, DMARC set to p=reject, plus
+  KnowBe4 and Zoom verification TXT records. No GitHub organization and no npm or PyPI packages exist
+  under this name. There is no API surface to catalog at this time.
 url: https://raw.githubusercontent.com/api-evangelist/circanews/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,7 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-web-status:
+  probed: '2026-07-20'
+  apex_a_record: false
+  http_reachable: false
+  note: domain registered and mail-active, but serves no website
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 tags:
 - Company
 apis: []
@@ -21,5 +50,7 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/circanews-domain-security.yml
 - type: Website
   url: https://circanews.com
